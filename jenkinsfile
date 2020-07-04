@@ -3,7 +3,8 @@ pipeline {
  stages {
  stage('shr-pipeline-test1') {
      steps {
-         echo 'test1 for pipeline by Shr' sh "python --version"
+         echo 'test1 for pipeline by Shr'
+         sh "python --version"
            }
                              }
  stage('shr-pipeline-test2') {
@@ -13,7 +14,8 @@ pipeline {
      }
  stage('shr-pipeline-test3') {
      steps {
-         echo 'test3 for pipeline by Shr' sh "ls -lh /"
+         echo 'test3 for pipeline by Shr'
+         sh "ls -lh /"
            }
       }
    }
