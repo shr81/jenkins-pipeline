@@ -10,6 +10,8 @@ pipeline {
  stage('shr-pipeline-test2') {
      steps {
          echo 'test2 for pipeline by Shr'
+         sh "pwd"
+	 sh "whoami"
            }
      }
  stage('shr-pipeline-test3') {
